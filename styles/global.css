@@ -1,0 +1,332 @@
+:root {
+    --text-light: #FFFFFF;
+    --black-color: #000000;
+    --blue-dark-color: #1D4253;
+    --blue-semilight-color: #166386;
+    --blue-light-color: #297EA6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("../assets/images/polygon-scatter-haikei.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin: 27px 60px 0 0;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 700;
+    position: relative;
+}
+
+header nav a::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: var(--blue-light-color);
+    border-radius: 0 8px 8px 0;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+main {
+    margin-top: 258px;
+
+}
+
+main .main-section {
+    display: flex;
+    flex-direction: row;
+    margin: 0 140px;
+    color: var(--text-light);
+    align-items: center;
+}
+
+main .main-section .text-wrapper {
+    width: 1290px;
+}
+
+main .main-section .text-wrapper h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+main .main-section .text-wrapper h2 {
+    font-size: 70px;
+    font-weight: 700;
+    text-wrap: balance;
+}
+
+main .main-section .text-wrapper p {
+    font-size: 20px;
+    line-height: 2.3rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+    text-wrap: balance;
+}
+
+main .main-section .text-wrapper .languages {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+main .main-section .text-wrapper .languages img {
+    width: 80px;
+    height: fit-content;
+}
+
+main .main-section .profile-image {
+    border-radius: 50%;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+main .main-experiences-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 222px 0 222px;
+    /* min-height: 100vh; */
+}
+
+main .main-experiences-section .main-experiences-section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--text-light);
+}
+
+main .main-experiences-section .main-experiences-section-title h2 {
+    margin-bottom: 80px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+main .main-experiences-section .main-experiences-section-title .divider {
+    height: 5px;
+    width: 100px;
+    background-color: var(--blue-semilight-color);
+    position: absolute;
+    border-radius: 10px;
+}
+
+main .main-experiences-section .experiences-card {
+    display: flex;
+    flex-direction: row;
+    width: 992px;
+    background-color: var(--blue-dark-color);
+    border-radius: 12px;
+    color: var(--text-light);
+    margin: 20px 0;
+}
+
+main .main-experiences-section .experiences-card .text-wrapper {
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+main .main-experiences-section .experiences-card .text-wrapper .text-wrapper-title {
+    margin-bottom: 10px;
+}
+
+main .main-experiences-section .experiences-card .text-wrapper .text-wrapper-title p {
+    font-weight: 600;
+}
+
+main .main-experiences-section .experiences-card .text-wrapper .text-wrapper-title h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+main .main-experiences-section .experiences-card .text-wrapper p:nth-child(2) {
+    font-size: 18px;
+}
+
+main .main-experiences-section .experiences-card .text-wrapper p:nth-child(3) {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+}
+
+footer .footer-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--text-light);
+    margin-bottom: 50px;
+}
+
+footer .footer-title h2 {
+    margin: 20px 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+footer .footer-title .divider {
+    height: 5px;
+    width: 100px;
+    background-color: var(--blue-semilight-color);
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+footer .footer-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+footer .footer-form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+footer .footer-form-inputs input {
+    width: 530px;
+    height: 69px;
+    border: none;
+    border-radius: 8px;
+    padding: 0 1.4rem;
+    font-size: 17px;
+}
+
+
+footer .footer-form-inputs textarea {
+    width: 530px;
+    height: 231px;
+    border: none;
+    padding: 1.2rem 1.2rem 0 1.2rem;
+    font-size: 17px;
+    resize: none;
+    border-radius: 8px;
+}
+
+
+footer .footer-form-inputs button {
+    width: 235px;
+    height: 60px;
+    background-color: var(--blue-semilight-color);
+    color: var(--text-light);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 500ms ease-in-out;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+footer .footer-form-inputs button:hover {
+    background-color: var(--blue-dark-color);
+}
+
+footer .footer-icons-contact {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+footer .footer-icons-contact img {
+    width: 50px;
+}
+
+footer .footer-icons-contact ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+body.successfully {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body .successfully-text-wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+body .successfully-text-wrapper h1 {
+    font-size: 70px;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+body .successfully-text-wrapper p {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+body .successfully-comeback-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+body .successfully-comeback-link a {
+    width: 12%;
+    background-color: var(--blue-light-color);
+    text-decoration: none;
+    color: var(--text-light);
+    padding: 15px 0;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: 500ms ease-in-out;
+}
+
+body .successfully-comeback-link a:hover {
+    background-color: var(--blue-dark-color);
+}
